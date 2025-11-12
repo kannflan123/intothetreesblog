@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <div class="gif-container">
-  <img src="images/welcome.gif" alt="Click to enter" id="clickGif">
+    <img src="images/welcome.gif" alt="Click to enter" id="clickGif">
   </div>
 
   <script>
     document.getElementById("clickGif").addEventListener("click", function() {
-      var password = prompt("?");
+      var password = prompt("Enter password:");
 
       if (password === "openSesame") {
-        window.location.href = "home.html"; // or whatever your main page is
+        window.location.href = "home.html";
       } else if (password !== null) {
         alert("Wrong password!");
       }
@@ -25,5 +25,6 @@
 
 </body>
 </html>
+
 
 
