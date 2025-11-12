@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to My Website</title>
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my very first website. More to come!</p>
+
+  <div class="gif-container">
+    <img src="your-image.gif" alt="Click to enter" id="clickGif">
+  </div>
+
+  <script>
+    document.getElementById("clickGif").addEventListener("click", function() {
+      var password = prompt("Enter password:");
+
+      if (password === "openSesame") {
+        window.location.href = "home.html"; // or whatever your main page is
+      } else if (password !== null) {
+        alert("Wrong password!");
+      }
+    });
+  </script>
+
 </body>
 </html>
